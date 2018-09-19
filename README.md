@@ -1,6 +1,6 @@
 ## Aimee Craig
 
-A sentence about who and what you are. Then a sentence about what you've achieved. And then a sentence about what you're looking for: what you would ideally be doing, with whom and in what environment.
+Experienced Service Desk Analyst with a demonstrated history of working in the IT and media production industry. Skilled in Mac OS X, Windows, Active Directory, Exchange, Office 365, and ESXi. Strong information technology professional with a Bachelor of Science (BSc) focused in Film Production and Technology from Birmingham City University.
 
 ## Skills
 
@@ -23,28 +23,21 @@ Descriptive paragraph of how capable you are at this skill and, if relevant, how
 
 ## Education
 
-#### Makers Academy (start_date to end_date)
-
-- Curious and passionate about code. [PROVIDE EVIDENCE]
-- Fast, independent learner [PROVIDE EVIDENCE]
-- Great collaborator [PROVIDE EVIDENCE]
+#### Makers Academy (October 2018 to present)
 
 - OOP, TDD, MVC, DDD
 - Agile/XP
 - Ruby, Rails, JavaScript
 - RSpec, Jasmine
 
-#### Your University / College (start_date to end_date)
+#### Birmingham City University (September 2010 to July 2013)
 
-- Subject, any specialisms
-- Grade
-- Other cool stuff
+**Bachelor of Science in Film Production and Technology (Hons)**
+*Classification: 1st
 
-#### Any other qualifications
+## Work Experience
 
-## Experience
-
-**Company Name** (start_date to end_date)    
-*Your job title*  
-**Company Name** (start_date to end_date)   
-*Your job title*  
+**Bauer Media** (August 2015 to August 2018)    
+*IT Service Desk Support Analyst*
+**Ideal Shopping Direct** (March 2014 to August 2015)   
+*Multi Skilled Studio Operator*
