@@ -59,13 +59,12 @@ do
     pause
 }
 until ($input -eq 'q')
+
+$Mailbox = Read-Host "Please enter the alias of the mailbox"
+$Users = Read-Host "Please enter the username of the user/s (separate with comma)"
 ```
 
 After using this particular script for a while, I created another script to view the permissions of a given mailbox. Then I created another, and another, and eventually decided to combine all of my Exchange scripts into one more user friendly tool.
-
-# Define variables #
-$Mailbox = Read-Host "Please enter the alias of the mailbox"
-$Users = Read-Host "Please enter the username of the user/s (separate with comma)"
 
 ## Work Experience
 
