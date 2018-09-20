@@ -4,6 +4,69 @@
 
 Experienced Service Desk Analyst with a demonstrated history of working in the IT and media production industry. Skilled in Mac OS X, Windows, Active Directory, Exchange, Office 365, and ESXi. Strong information technology professional with a Bachelor of Science (BSc) focused in Film Production and Technology from Birmingham City University.
 
+## Notable Repositories
+
+#### [Exchange Management Tool](https://github.com/aimeecraig/exchange-management-tool)
+This initially began as a script for granting full access and send as permissions to mailboxes. I created the script below as granting these permissions using the Exchange Management Console GUI was time consuming, especially if a user required access to multiple mailboxes.
+
+```powershell
+Add-PSSnapin Microsoft.Exchange.Management.PowerShell.E2010 -ErrorAction SilentlyContinue
+Clear-Host
+
+function Show-Menu
+{
+    param (
+        [string]$Title = "Select permission level:`n"
+    )
+    Clear-Host
+    Write-Host "$Title"
+
+    Write-Host "`t1: Full access only." -ForegroundColor Gray
+    Write-Host "`t2: Full access and send as." -ForegroundColor Gray
+    Write-Host "`n`tQ: Press 'Q' to quit." -ForegroundColor Red
+}
+
+do
+{
+    Show-Menu
+    $input = Read-Host "`nPlease make a selection"
+    switch ($input)
+    {
+        "1" {
+            cls
+            Write-Host "Full access only permission selected." -ForegroundColor Green
+            # Apply full access perms #
+            Add-MailboxPermission -Identity "$Mailbox" -User $Users -AccessRights FullAccess -InheritanceType All -WarningAction SilentlyContinue | Out-Null
+            }
+
+        "2" {
+            cls
+            # Apply full access perms #
+            Add-MailboxPermission -Identity "$Mailbox" -User $Users -AccessRights FullAccess -InheritanceType All -WarningAction SilentlyContinue | Out-Null
+            Write-Host -BackgroundColor DarkGreen -ForegroundColor White 'Full access perms added'
+
+            # Apply send as perms #
+            Get-User -Identity "$Mailbox" | Add-ADPermission -User "Bauer-UK\$Users" -Extendedrights Send-As -InheritanceType All -WarningAction SilentlyContinue | Out-Null
+            Write-Host -BackgroundColor DarkGreen -ForegroundColor White 'Send as perms added'
+            "Full access and send as permission selected."
+            }
+
+        "q" {
+            cls
+            return
+            }
+    }
+    pause
+}
+until ($input -eq 'q')
+```
+
+After using this particular script for a while, I created another script to view the permissions of a given mailbox. Then I created another, and another, and eventually decided to combine all of my Exchange scripts into one more user friendly tool.
+
+# Define variables #
+$Mailbox = Read-Host "Please enter the alias of the mailbox"
+$Users = Read-Host "Please enter the username of the user/s (separate with comma)"
+
 ## Work Experience
 
 #### Bauer Media (August 2015 to August 2018)    
