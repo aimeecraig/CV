@@ -2,7 +2,7 @@
 
 [aimeecraig1@gmail.com](mailto:aimeecraig1@gmail.com)
 
-Experienced Service Desk Analyst with a demonstrated history of working in the IT and media production industry. Skilled in Mac OS X, Windows, Active Directory, Exchange, Office 365, and ESXi. Strong information technology professional with a Bachelor of Science (BSc) focused in Film Production and Technology from Birmingham City University.
+I am a Junior Software Engineer Apprentice currently working for BGL Group.
 
 ## Notable Repositories
 
@@ -46,7 +46,7 @@ do
             Write-Host -BackgroundColor DarkGreen -ForegroundColor White 'Full access perms added'
 
             # Apply send as perms #
-            Get-User -Identity "$Mailbox" | Add-ADPermission -User "Bauer-UK\$Users" -Extendedrights Send-As -InheritanceType All -WarningAction SilentlyContinue | Out-Null
+            Get-User -Identity "$Mailbox" | Add-ADPermission -User "DOMAIN\$Users" -Extendedrights Send-As -InheritanceType All -WarningAction SilentlyContinue | Out-Null
             Write-Host -BackgroundColor DarkGreen -ForegroundColor White 'Send as perms added'
             "Full access and send as permission selected."
             }
