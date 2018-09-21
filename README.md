@@ -64,19 +64,19 @@ $Mailbox = Read-Host "Please enter the alias of the mailbox"
 $Users = Read-Host "Please enter the username of the user/s (separate with comma)"
 ```
 
-After using this particular script for a while, I created another script to view the permissions of a given mailbox. Then I created another, and another, and eventually decided to combine all of my Exchange scripts into one more user friendly tool.
+After using this particular script for a while, I created another script to view the permissions of a given mailbox. Then I created another, and another, and eventually decided to combine all of my Exchange scripts into one more user friendly tool. I also took the opportunity to refactor the code where I could but will continue this process on the repository here.
 
 ## Work Experience
 
 #### Bauer Media (August 2015 to August 2018)    
 *IT Service Desk Support Analyst*
 
+- Self taught PowerShell in order to create a tool for myself and the other analysts to use in order to perform repeated Microsoft Exchange tasks.
 - Providing first and second line support remotely and via telephone for various departments and divisions across the UK.
 - Supporting Mac OS X and Windows systems, as well as various software packages including Adobe Creative Suite and Microsoft Office.
 - Creating and updating user guides for use both internally and externally from the service desk.
 - Troubleshooting and resolving the majority of calls at the first contact, and also working within agreed SLA targets.
-- Supporting, along with a team of 7, over 3500 Windows and Mac machines across most of the UK.
-- Self taught PowerShell in order to create a tool for myself and the other analysts to use in order to perform repeated Microsoft Exchange tasks.
+- Supporting, along with a team of 7, over 3500 PCs and Macs across most of the UK.
 
 #### Ideal Shopping Direct (March 2014 to August 2015)   
 *Multi Skilled Studio Operator*
@@ -97,7 +97,7 @@ After using this particular script for a while, I created another script to view
 
 #### Birmingham City University (September 2010 to July 2013)
 
-*Bachelor of Science in Film Production and Technology (Hons)*
+*Bachelor of Science in Film Production and Technology (Hons)*  
 *Classification: 1st*
 
 - 3DS Max and 3D computer graphics
