@@ -90,7 +90,7 @@ After using this particular script for a while, I created another script to view
 
 ## Education
 
-#### Makers Academy (October 2018 to present)
+#### Makers Academy (September 2018 to present)
 
 - Ruby
 - RSpec
