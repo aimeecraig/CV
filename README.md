@@ -94,6 +94,8 @@ After using this particular script for a while, I created another script to view
 
 - Ruby
 - RSpec
+- Test Driven Development (TDD)
+- Pair programming
 
 #### Birmingham City University (September 2010 to July 2013)
 
